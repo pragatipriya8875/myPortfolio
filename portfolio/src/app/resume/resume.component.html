@@ -1,0 +1,79 @@
+<div class="resume-container">
+  <div class="download-section">
+    <a href="assets/Pragati_Priya_resume.pdf" download>
+      <button class="download-btn">📄 Click to Download My Resume</button>
+    </a>
+  </div>
+
+  <div class="resume-section" (click)="toggleSection('workExperience')">
+    <h3>💼 Work Experience</h3>
+    <div class="section-content" *ngIf="sections.workExperience">
+      <ul>
+        <li>
+          - <strong>Software Developer (Supplier Platform Sustainability)</strong> <em>Accenture India Pvt. LTD.</em><br>
+          Apr 2024 - Present<br>
+          Gurugram, Haryana<br>
+          • Engineered and maintained core features for the Supplier Platform Sustainability project utilizing the MEAN stack, directly contributing to a 20% surge in overall supplier satisfaction ratings.<br>
+          • Designed and implemented email templates using HTML/CSS, integrated them with Amazon S3 for storage, and seamlessly connected the functionality across both frontend and backend systems.<br>
+          • Developed and incorporated a custom Angular “People Picker” in Procurement Plus, enabling 500+ users to efficiently manage Additional Interventional Roles with self-service capabilities.<br>
+          • Actively practiced Agile methodologies, contributing to sprints and stand-ups, resolving critical bugs, implementing user stories, and executing 100+ CI/CD deployment runner pipelines to ensure stability and delivery.<br>
+          • Embedded Busboy for efficient file upload handling across 10 microservices/repositories (Supplier, Buyer, Stakeholder, Lambda Queues), improving streaming performance and reducing memory usage.<br>
+          • Actively participated in product release cycles, contributing to successful deployments and post-release validation.
+        </li>
+        <li>
+          - <strong>Development Intern</strong> <em>Protrainy</em><br>
+          Dec 2021 - Sept 2022<br>
+          Online<br>
+          • Designed a database and created a fully responsive website using SQL and MEAN technology, and structured a 100% responsive user registration webpage that can store data using modeled tables.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="resume-section" (click)="toggleSection('certifications')">
+    <h3>🎓 Certifications</h3>
+    <div class="section-content" *ngIf="sections.certifications">
+      <ul>
+        <li>Accenture ‘Tech Expressway Program’ training & assessment completion - Sept 2024</li>
+        <li>Google Cloud Certified Associate Cloud Engineer – Cloud Digital Leader (GCP Practitioner) - Aug 2023</li>
+        <li>Introduction to Programming using Python - July 2021</li>
+        <li>HTML, CSS, JavaScript for Web Developers — Coursera - May 2020</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="resume-section" (click)="toggleSection('skills')">
+    <h3>🛠️ Technical Skills</h3>
+    <div class="section-content" *ngIf="sections.skills">
+      <ul>
+        <li><strong>Languages & Frameworks:</strong> Angular, NodeJS, JavaScript, Express JS, HTML, CSS, SQL, PL/SQL</li>
+        <li><strong>Databases:</strong> MongoDB, PostgreSQL (PGAdmin)</li>
+        <li><strong>Cloud & Tools:</strong> AWS (EC2, S3), Git, GitHub, Visual Studio Code, Postman</li>
+        <li><strong>Methodologies:</strong> REST API, Agile Methodology, Data Structures, DBMS, Operating Systems</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="resume-section" (click)="toggleSection('education')">
+    <h3>🎓 Education</h3>
+    <div class="section-content" *ngIf="sections.education">
+      <ul>
+        <li>
+          - <strong>BE in Computer Science & Engineering</strong> (Percentage - 82.1%)<br>
+          Sant Longowal Institute of Engineering and Technology, Sangrur<br>
+          July 2020 – July 2023
+        </li>
+        <li>
+          - <strong>Diploma in Computer Science & Engineering</strong> (Percentage - 84.4%)<br>
+          Sant Longowal Institute of Engineering and Technology, Sangrur<br>
+          July 2017 – July 2020
+        </li>
+        <li>
+          - <strong>Matriculation (CBSE)</strong> (Percentage - 93.1%)<br>
+          DAV Public School, Sheohar<br>
+          May 2017
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

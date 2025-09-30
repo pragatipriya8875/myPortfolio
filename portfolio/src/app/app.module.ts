@@ -1,0 +1,42 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { ProjectModalComponent } from './project-modal/project-modal.component'
+import { CarouselModule }  from 'ngx-bootstrap/carousel'
+
+@NgModule({
+   declarations: [
+    AppComponent,
+    HeaderComponent,
+    NavComponent,
+    HomeComponent,
+    ContactComponent,
+    ResumeComponent,
+    ProfileComponent,
+    ProjectCardComponent,
+    ProjectModalComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ModalModule.forRoot(),
+    CarouselModule.forRoot()
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
